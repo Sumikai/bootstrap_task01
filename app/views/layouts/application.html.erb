@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpages</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  </head>
+
+  <body>
+    <header>
+        <a href="#">トップページ</a>
+    </header>
+    
+    <%= yield %>
+    
+    <footer>
+      <p>Testページ</p>
+      <p>© 2018 Copyright HASHIMOTO Jun.</p>
+    </footer>
+  </body>
+</html>
